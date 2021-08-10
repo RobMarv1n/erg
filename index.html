@@ -71,30 +71,123 @@
     </div>
   </header>
   <main class="main">
-    
+    <section class="statistic">
+      <div class="statistic__container container">
+        <dl class="statistic__list">
+          <div class="statistic__list-item">
+            <dt class="statistic__list-item-number">1<span>-й</span></dt>
+            <dd class="statistic__list-item-description">промышленный маршрут в Казахстане</dd>
+          </div>
+          <div class="statistic__list-item">
+            <dt class="statistic__list-item-number">5</dt>
+            <dd class="statistic__list-item-description">предприятий ERG</dd> 
+          </div>
+          <div class="statistic__list-item">
+            <dt class="statistic__list-item-number">4</dt>
+            <dd class="statistic__list-item-description">производственных процесса</dd>
+          </div>
+          <div class="statistic__list-item">
+            <dt class="statistic__list-item-number">360</dt>
+            <dd class="statistic__list-item-description">градусов – виртуальные экскурсии</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+    <section class="map">
+      <div class="map__container container"></div>
+    </section>
+    <section class="excursion">
+      <div class="excursion__container container">
+        <div class="excursion__img-container">
+          <img src="assets/img/backgrounds/excursion.svg" alt="Рабочая техника ERG">
+        </div>
+        <form class="excursion__form" action="#" method="POST">
+          <h3 class="excursion__form-title">Получи свой билет на экскурсию по производствам ERG!</h3>
+          <div class="excursion__input-wrapper">
+            <label for="company"></label>
+            <select class="excursion__input"  type="text" id="company" placeholder="Выберите предприятие" required>
+              <option></option>
+            </select>
+          </div>
+
+          <div class="excursion__input-wrapper">
+              <label for="tel"></label>
+              <select class="excursion__input"  type="text" id="company" placeholder="Выберите дату посещения" required>
+                
+              </select>
+          </div>
+          
+          <div class="excursion__input-wrapper">
+              <label for="city"></label>
+              <input class="excursion__input"  type="text" id="city" placeholder="Имя и Фамилия" required>
+          </div>
+
+          <div class="excursion__input-wrapper">
+              <label for="tel"></label>
+              <input class="excursion__input"  type="tel" id="tel" placeholder="Укажите номер телефона">
+          </div>
+
+          <div class="excursion__input-wrapper">
+              <label for="email"></label>
+              <input class="excursion__input"  type="email" id="email" placeholder="Укажите ваш e-mail">
+          </div>
+          <div class="excursion__button-wrapper">
+            <button class="excursion__button button" type="submit">Отправить запрос</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="play-with-erg container">
+      <div class="play-with-erg__container">
+        <div  class="play-with-erg__text-wrapper">
+          <h2 class="play-with-erg__title">Поиграй с ержигитом</h2>
+          <p class="play-with-erg__greeting">Дорогой посетитель!</p>
+          <p class="play-with-erg__paragraph">У тебя есть уникальный шанс – сыграть в единственную интерактивную игру, посвященную промышленному туризму.
+          </p>
+          <p class="play-with-erg__paragraph">Помоги Ержигиту подготовиться к экскурсии с соблюдением техники безопасности на производстве и познакомиться с предприятиями одной из крупнейших горно-металлургических компаний Казахстана и мира – ERG.</p>
+          <p class="play-with-erg__paragraph">Пополни рейтинг лучших игроков и получи памятный приз – брелок с изображением нашего героя!</p>
+          <button class="play-with-erg__button button">Начать игру</button>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer class="main-footer">
-    <div class="container footer-container">
+  <footer class="main-footer container">
+    <div class="container main-footer__container">
+  
+      <ul class="main-footer__contacts">
+        <h3 class="main-footer__contacts-title">Контакты</h3>
+        <li class="main-footer__contacts-item main-footer__contacts-item--mail">
+          <a href="mailto:press@erg.kz">press@erg.kz</a>
+        </li>
+        <li class="main-footer__contacts-item main-footer__contacts-item--tel">
+          <a href="tel:+7(707)123-94-40">+7 707 123 9440</a>
+        </li>
+      </ul>
+      
       <a class="main-footer-logo" href="index.html">
-        <img src="assets/img/logo-light.png" width="115" height="88" alt="Логотип сайта ERG">
+        <img src="assets/img/logo-dark.png" width="115" height="88" alt="Логотип сайта ERG">
       </a>
-      <p class="main-footer-copyright">© 2021 Все права защищены</p>
+      
       <ul class="main-footer__social">
         <li class="main-footer__social-item instagram">
-          <p>Наш Instagram:</p>
-          <a href="#">bricketgrillcook</a>
+          <p></p>
+          <a href="#"></a>
         </li>
         <li class="main-footer__social-item tel">
-          <p>Наш телефон:</p>
-          <a href="#">+7(908)123-45-67</a>
+          <p></p>
+          <a href="#"></a>
         </li>
         <li class="main-footer__social-item e-mail">
-          <p>Наш E-mail:</p>
-          <a href="#">grillcook@mail.ru</a>
+          <p></p>
+          <a href="#"></a>
         </li>
       </ul>
     </div>
-    
+
+    <div class="main-footer__copyright-wrapper">
+      <p class="main-footer__copyright">© 2021 Eurasian Resources Group</p>
+    </div>
+
   </footer>
 
   <script src="assets/jquery/jquery-3.6.0.min.js"></script>
