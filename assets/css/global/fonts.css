@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 400;
+  /* font-display: swap; */
+  src: local('Helvetica Neue'),
+       url('/assets/fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+       url('/assets/fonts/HelveticaNeueCyr-Roman.wof') format('woff'), 
+       url('/assets/fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 700;
+  /* font-display: swap; */
+  src: local('Helvetica Neue'),
+       url('/assets/fonts/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+       url('/assets/fonts/HelveticaNeueCyr-Bold.woff') format('woff'), 
+       url('/assets/fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+}
+
