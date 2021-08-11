@@ -1,3 +1,5 @@
+// ! HEADER SLIDER
+
 const swiper = new Swiper('.swiper-container', {
 
   slidesPerView: 1,
@@ -9,3 +11,14 @@ const swiper = new Swiper('.swiper-container', {
   prevButton: '.swiper-button-prev',
 });
 
+// ! HEADER MODAL
+
+jQuery(document).on( "click" , '.main-header__navigation-button' , function(event) {
+  event.preventDefault();
+  
+  let modal = jQuery(this).parents('.main-header').find('.main-header__modal-navigation-list');
+  let closeButton = jQuery(this).parents('.main-header').find('.main-header__modal-close-button');
+  jQuery(this).toggleClass('close-button');
+  modal.toggleClass('visually-hidden');
+  
+});  

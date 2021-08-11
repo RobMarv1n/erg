@@ -7,11 +7,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css"/>
   <link rel="stylesheet" href="assets/css/global/fonts.css">
   <link rel="stylesheet" href="assets/css/global/utils.css">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <title>Главная страница сайта ERG</title>
 </head>
 <body>
-  <div class="opacity-wrapper visually-hidden"></div>
   <header class="main-header">
     <div class="container main-header__container">
       <a class="main-header__logo" href="index.html">
@@ -49,7 +48,25 @@
           </li>
         </ul>
       </div>
-
+        <button class="main-header__navigation-button"></button>
+        <ul class="main-header__modal-navigation-list visually-hidden">
+          <li class="main-header__modal-navigation-item">
+            <a href="#">О компании</a>
+          </li>
+          <li class="main-header__modal-navigation-item">
+            <a href="#">Виртуальная экскурсия</a>
+          </li>
+          <li class="main-header__modal-navigation-item">
+            <a href="#">Посетить предприятие</a>
+          </li>
+          <li class="main-header__modal-navigation-item">
+            <a href="#">Поиграй с Ержигитом</a>
+          </li>
+          <li class="main-header__modal-navigation-item">
+            <a href="#">Контакты</a>
+          </li>
+        
+        </ul>
       <div class="main-header__title-container">
         <h2 class="main-header__title">Познакомься с ERG!</h2>
         <p class="main-header__title-description">Посети предприятие Eurasian Resources Group прямо сейчас в один клик</p>
@@ -105,21 +122,25 @@
           <h3 class="excursion__form-title">Получи свой билет на экскурсию по производствам ERG!</h3>
           <div class="excursion__input-wrapper">
             <label for="company"></label>
-            <select class="excursion__input"  type="text" id="company" placeholder="Выберите предприятие" required>
-              <option></option>
+            <select class="excursion__input excursion__select"  type="text" id="company" required>
+              <option value="" selected disabled hidden>Выберите предприятие</option>
+              <option>Выберите предприятие</option>
+              <option>Выберите предприятие</option>
+              <option>Выберите предприятие</option>
+              <option>Выберите предприятие</option>
             </select>
           </div>
 
           <div class="excursion__input-wrapper">
-              <label for="tel"></label>
-              <select class="excursion__input"  type="text" id="company" placeholder="Выберите дату посещения" required>
-                
+              <label for="company"></label>
+              <select class="excursion__input excursion__select"  type="date" id="company" required>
+                <option value="" selected disabled hidden>Выберите дату посещения</option>
               </select>
           </div>
           
           <div class="excursion__input-wrapper">
-              <label for="city"></label>
-              <input class="excursion__input"  type="text" id="city" placeholder="Имя и Фамилия" required>
+              <label for="name"></label>
+              <input class="excursion__input"  type="text" id="name" placeholder="Имя и Фамилия" required>
           </div>
 
           <div class="excursion__input-wrapper">
@@ -165,23 +186,30 @@
       </ul>
       
       <a class="main-footer-logo" href="index.html">
-        <img src="assets/img/logo-dark.png" width="115" height="88" alt="Логотип сайта ERG">
+        <img src="assets/img/logo-dark.png" width="150" height="115" alt="Логотип сайта ERG">
       </a>
       
-      <ul class="main-footer__social">
-        <li class="main-footer__social-item instagram">
-          <p></p>
-          <a href="#"></a>
-        </li>
-        <li class="main-footer__social-item tel">
-          <p></p>
-          <a href="#"></a>
-        </li>
-        <li class="main-footer__social-item e-mail">
-          <p></p>
-          <a href="#"></a>
-        </li>
-      </ul>
+      <div class="main-footer__social-wrapper">
+        <h3 class="main-footer__social-title">Мы в социальных сетях</h3>
+        <ul class="main-footer__social-list">
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link vk" href="#"></a>
+          </li>
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link inst" href="#"></a>
+          </li>
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link facebook" href="#"></a>
+          </li>
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link youtube" href="#"></a>
+          </li>
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link in" href="#"></a>
+          </li>
+        </ul>
+        
+      </div>
     </div>
 
     <div class="main-footer__copyright-wrapper">
