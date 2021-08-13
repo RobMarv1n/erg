@@ -372,7 +372,7 @@
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   .map__container {
-    height: 0;
+    height: 600px;
   }
 }
 
@@ -459,11 +459,20 @@
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .excursion {
+    min-width: fit-content;
+  }
   .excursion__container {
     column-gap: 50px;
+    flex-direction: column;
+    row-gap: 20px;
+    height: 660px;
   }
   .excursion__img-container {
-    display: none;
+    width: 280px;
+  }
+  .excursion__img-container img {
+    width: 280px;
   }
   .excursion__form {
     width: 280px;
@@ -477,9 +486,6 @@
   .excursion__input-wrapper {
     width: 280px;
     height: 45px;
-  }
-  .excursion__img-container img {
-    width: 620px;
   }
   .excursion__button-wrapper {
     align-self: center;
@@ -545,18 +551,21 @@
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
   .play-with-erg {
-    height: 690px;
+    height: 940px;
   }
   .play-with-erg__container {
     column-gap: 50px;
     padding-top: 40px;
     padding-left: 15px;
+    width: 280px;
+    background-position: 100% 100%;
+    background-size: contain;
   }
   .play-with-erg__text-wrapper {
     width: 280px;
   }
   .play-with-erg__title {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 70px;
   }
   .play-with-erg__greeting {

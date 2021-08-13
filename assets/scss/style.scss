@@ -467,7 +467,7 @@
     and (max-device-width : 768px) {
 
         &__container {
-            height: 0;
+            height: 600px;
         }
 
     }
@@ -589,12 +589,21 @@
     and (min-device-width : 320px) 
     and (max-device-width : 768px) {
 
+        min-width: fit-content;
+
         &__container {
             column-gap: 50px;
+            flex-direction: column;
+            row-gap: 20px;
+            height: 660px;
         }
 
         &__img-container {
-            display: none;
+            width: 280px;
+        }
+
+        &__img-container img {
+            width: 280px;
         }
 
         &__form {
@@ -612,10 +621,6 @@
         &__input-wrapper {
             width: 280px;
             height: 45px;
-        }
-
-        &__img-container img{
-            width: 620px;
         }
 
         &__button-wrapper {
@@ -707,12 +712,15 @@
     and (min-device-width : 320px) 
     and (max-device-width : 768px) {
 
-        height: 690px;
+        height: 940px;
 
         &__container {
             column-gap: 50px;
             padding-top: 40px;
             padding-left: 15px;
+            width: 280px;
+            background-position: 100% 100%;
+            background-size: contain;
         }
 
         &__text-wrapper {
@@ -720,7 +728,7 @@
         }
 
         &__title {
-            font-size: 22px;
+            font-size: 20px;
             margin-bottom: 70px;
         }
 
