@@ -1,0 +1,190 @@
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.opacity-wrapper {
+    display: none;
+    position:fixed;
+    display:flex;
+    width:100%;
+    height:100%;
+    justify-content:center;
+    align-items:center;
+    background:rgba(0,0,0,.7);
+    z-index: 0;
+  }
+  
+  .opacity-wrapper--open {
+    z-index: 2;
+  }
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+main, section {
+    margin: 0;
+    padding: 0;
+}
+
+ul, dl, dt, dd {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol {
+    margin: 0;
+}
+
+a {
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+  color: #FB8106;
+}
+
+p, blockquote, h1, h2, h3, h4 {
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+input {
+    border: none;
+    padding: 0;
+}
+
+button {
+    padding: 0;
+}
+
+.button {
+    background-color: #FB8106;
+    width: 250px;
+    height: 60px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    text-align: center;
+    border: none;
+}
+
+.button:hover {
+    box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+.body-container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 1900px;
+    margin: 0 auto;
+}
+
+#button_to_top {
+  display: inline-block;
+  background-color: #ababab;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button_to_top::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 50px;
+  color: #fff;
+}
+#button_to_top:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button_to_top:active {
+  background-color: #555;
+}
+#button_to_top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/* ! ADAPTIVE FOR IPHONE */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 768px) {
+
+    .container {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+}
+
+/* ! ADAPTIVE FOR IPAD */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+
+    .container {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+}
+
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+
+    .container {
+        width: 1180px;
+        margin: 0 auto;
+    }
+
+}
