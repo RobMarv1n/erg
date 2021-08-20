@@ -62,6 +62,9 @@
 .main-header__modal-close-button {
   display: none;
 }
+.main-header__languages-item a:active {
+  color: #FB8106; 
+}
 @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1) {
   .main-header__navigation-container {
     column-gap: 38px;
