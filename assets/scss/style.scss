@@ -40,6 +40,10 @@
         column-gap: 50px;
     }
 
+    &__languages-item a:active {
+        color: #FB8106;
+    }
+
     &__languages-list {
         display: flex;
         column-gap: 40px;
@@ -372,6 +376,7 @@
         align-items: center;
         justify-content: center;
         max-height: 50px;
+        min-width: min-content;
     }
 
     &__list-item-number {
